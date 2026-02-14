@@ -1,13 +1,15 @@
 # Sens Prism
 
 [![License: BSL 1.1](https://img.shields.io/badge/License-BSL%201.1-blue.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/version-0.4.0-brightgreen.svg)](https://github.com/ecri0/prism/releases/tag/v0.4.0)
+[![Version](https://img.shields.io/badge/version-0.4.0-brightgreen.svg)](https://github.com/ecri0/sens-prism/releases/tag/v0.4.0)
 [![Python SDK](https://img.shields.io/badge/python-3.9%2B-blue.svg)](sdk/python)
 [![TypeScript SDK](https://img.shields.io/badge/typescript-5.0%2B-blue.svg)](sdk/typescript)
 
 **Make Sens of your AI.**
 
 Sens Prism is a Sovereign AI Gateway that sits between you and large language models, providing unprecedented transparency, control, and data ownership. Query your documents with confidence, knowing exactly why the AI says what it says—without surrendering your data to third parties.
+
+🌐 **Website**: [sens-thread.io](https://sens-thread.io)
 
 ## Why Sens Prism?
 
@@ -74,7 +76,7 @@ npm install && npx ts-node quickstart.ts
 
 **Sens Prism** starts at **$29/month** for professional use. Includes 100 requests/minute, 100 documents/day, and 10GB storage.
 
-Compare plans at [sens.ai/pricing](https://sens.ai/pricing).
+Compare plans at [sens-thread.io](https://sens-thread.io).
 
 ## SDK Support
 
@@ -92,9 +94,9 @@ Converts to Apache License 2.0 on February 14, 2029.
 
 ## Support
 
-- Issues: [GitHub Issues](https://github.com/ecri0/prism/issues)
-- Email: support@sens.ai
-- Docs: [sens.ai/docs](https://sens.ai/docs)
+- Website: [sens-thread.io](https://sens-thread.io)
+- Issues: [GitHub Issues](https://github.com/ecri0/sens-prism/issues)
+- Email: support@sens-thread.io
 
 ---
 
