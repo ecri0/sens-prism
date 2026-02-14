@@ -1,0 +1,135 @@
+name: Test SDKs
+
+on:
+  push:
+    branches: [main, develop]
+    paths:
+      - 'sdk/**'
+      - '.github/workflows/test-sdk.yml'
+  pull_request:
+    branches: [main, develop]
+    paths:
+      - 'sdk/**'
+      - '.github/workflows/test-sdk.yml'
+
+jobs:
+  test-python:
+    name: Test Python SDK
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.9', '3.10', '3.11', '3.12']
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          cd sdk/python
+          python -m pip install --upgrade pip
+          pip install -e ".[dev]"
+
+      - name: Lint with black
+        run: |
+          cd sdk/python
+          black --check sens
+
+      - name: Lint with isort
+        run: |
+          cd sdk/python
+          isort --check-only sens
+
+      - name: Lint with ruff
+        run: |
+          cd sdk/python
+          ruff check sens
+
+      - name: Type check with mypy
+        run: |
+          cd sdk/python
+          mypy sens
+        continue-on-error: true
+
+      - name: Run tests with pytest
+        run: |
+          cd sdk/python
+          pytest tests/ -v --cov=sens --cov-report=term-missing
+
+      - name: Upload coverage
+        uses: codecov/codecov-action@v3
+        with:
+          files: ./sdk/python/coverage.xml
+          flags: python-${{ matrix.python-version }}
+          fail_ci_if_error: false
+
+  test-typescript:
+    name: Test TypeScript SDK
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [16, 18, 20]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+          cache-dependency-path: 'sdk/typescript/package-lock.json'
+
+      - name: Install dependencies
+        run: |
+          cd sdk/typescript
+          npm ci
+
+      - name: Build
+        run: |
+          cd sdk/typescript
+          npm run build
+
+      - name: Lint
+        run: |
+          cd sdk/typescript
+          npm run lint
+
+      - name: Format check
+        run: |
+          cd sdk/typescript
+          npx prettier --check src
+
+      - name: Run tests
+        run: |
+          cd sdk/typescript
+          npm test
+
+      - name: Upload coverage
+        uses: codecov/codecov-action@v3
+        with:
+          files: ./sdk/typescript/coverage/coverage-final.json
+          flags: typescript-${{ matrix.node-version }}
+          fail_ci_if_error: false
+
+  all-tests-pass:
+    name: All Tests Pass
+    needs: [test-python, test-typescript]
+    runs-on: ubuntu-latest
+    if: always()
+
+    steps:
+      - name: Check test results
+        run: |
+          if [[ ${{ needs.test-python.result }} == 'failure' || ${{ needs.test-typescript.result }} == 'failure' ]]; then
+            echo "One or more test jobs failed"
+            exit 1
+          fi
+        env:
+          PYTHON_RESULT: ${{ needs.test-python.result }}
+          TYPESCRIPT_RESULT: ${{ needs.test-typescript.result }}

@@ -1,0 +1,59 @@
+{
+  "name": "@sens/prism",
+  "version": "0.4.0",
+  "description": "TypeScript SDK for Sens Prism - Sovereign AI Gateway",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "license": "BSL-1.1",
+  "author": "Sens Team <dev@sens.ai>",
+  "homepage": "https://sens.ai",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ecri0/prism.git",
+    "directory": "sdk/typescript"
+  },
+  "bugs": {
+    "url": "https://github.com/ecri0/prism/issues"
+  },
+  "keywords": [
+    "sens",
+    "prism",
+    "ai",
+    "llm",
+    "data-sovereignty",
+    "rag",
+    "interpretability"
+  ],
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint src --ext .ts",
+    "format": "prettier --write 'src/**/*.ts'",
+    "prepublishOnly": "npm run build && npm run test"
+  },
+  "dependencies": {
+    "form-data": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "jest": "^29.5.0",
+    "prettier": "^3.0.0",
+    "ts-jest": "^29.1.0",
+    "typescript": "^5.0.0"
+  }
+}

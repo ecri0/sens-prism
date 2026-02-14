@@ -1,0 +1,112 @@
+Business Source License 1.1
+
+Parameters
+
+Licensor:             Ecri
+Licensed Work:        Sens Prism v0.4.0
+                      The Licensed Work is (c) 2025 Ecri
+Change Date:          February 14, 2029
+Change License:       Apache License, Version 2.0
+
+For information about alternative licensing arrangements for the Licensed Work,
+please contact Ecri at legal@sens.ai.
+
+Notice
+
+Business Source License 1.1
+
+This Business Source License (this "License") between Licensor and you is not
+an open source license. However, the Licensed Work will eventually be made
+available under an open source License, as stated in this License.
+
+License Grant. Licensor hereby grants you the right to use, modify, create
+derivative works, and redistribute the Licensed Work, in source code or object
+code form, subject to the Restrictions and conditions below.
+
+Restrictions. You may not:
+(a) sublicense, sell, rent, lease, transfer, assign, or otherwise dispose of
+    the Licensed Work as a whole, or allow others to do so;
+(b) remove or obscure any licensor notices on the Licensed Work;
+(c) use the Licensed Work for providing time-sharing services, service bureau
+    services, software-as-a-service (SaaS) services, hosting services, managed
+    services or any other form of commercial hosting or services that compete
+    with Licensor's offerings; or
+(d) alter, remove or obscure any proprietary notices (including patent,
+    trademark and copyright notices) on the Licensed Work.
+
+Conditions. In consideration of the grants of rights contained herein, your use
+and redistribution of the Licensed Work is conditioned upon your compliance
+with the following conditions:
+
+(a) You must retain, in the source code or, if applicable, other forms in which
+    the Licensed Work is made available, all copyright, patent, trademark, and
+    attribution notices from the Licensed Work, excluding those notices that do
+    not pertain to any part of the Derivative Works; and
+(b) You must provide, with prominently displayed notice in the source code or,
+    if applicable, other forms in which a Derivative Work or the Licensed Work
+    is made available, a complete copy of this License and provide the
+    Licensor's name and address with each copy you distribute.
+
+Change License. Effective on the Change Date, or if earlier the date you create
+a Derivative Work (any modification, enhancement or adaptation of the Licensed
+Work), Licensor hereby grants you the right to use, modify, create derivative
+works, and redistribute the Licensed Work under the Change License; provided,
+however, that on such date the Licensor also grants to any recipients of
+Derivative Works created by you the rights granted to you under the Change
+License on an open source, royalty-free, perpetual, worldwide, non-exclusive,
+no-charge, royalty-free, irrevocable basis.
+
+For avoidance of doubt, and to clarify the scope of Change License grant:
+should the Change License be the Apache License, Version 2.0, then the rights
+granted to recipients of Derivative Works are those specified in Apache
+License, Version 2.0; should the Change License be another open source license,
+then the rights granted to recipients of Derivative Works are those specified
+in the applicable Change License. Any Derivative Works for which you do not
+retain such open source licenses may be made available under a separate
+commercial license.
+
+Limitation of Liability. IN NO EVENT WILL LICENSOR BE LIABLE TO YOU FOR ANY
+DIRECT, INDIRECT, SPECIAL, INCIDENTAL, PUNITIVE OR CONSEQUENTIAL LOSS,
+DAMAGE, COST OR EXPENSE OF ANY KIND WHATSOEVER RELATED TO THE LICENSE OR THE
+USE OF THE LICENSED WORK, EVEN IF LICENSOR HAS BEEN ADVISED OF THE POSSIBILITY
+OF SUCH LOSS, DAMAGE, COST OR EXPENSE. IN PARTICULAR, FOR THE AVOIDANCE OF
+DOUBT, LICENSOR WILL NOT BE LIABLE FOR ANY LOST PROFITS, LOST REVENUE, OR
+LOST BUSINESS OPPORTUNITY.
+
+Patent License. Licensor hereby grants you a license under any patent claims
+owned by Licensor that are necessarily infringed by your use of the Licensed
+Work (as provided by the Licensed Work at the time Licensor made the Licensed
+Work available), subject to the Restrictions and conditions of this License.
+
+Patent Infringement. If you have knowledge that the Licensed Work infringes a
+patent owned by you, you must notify Licensor in writing as soon as reasonably
+practicable. If you fail to do so, Licensor may pursue all remedies available
+at law or in equity.
+
+Term. This License is effective until the earlier of:
+(a) the date that this License is terminated, as provided below; or
+(b) the date on which the Licensed Work is made available under an open source
+    license, as described above (the "Term").
+
+Termination. If you breach any of the conditions or restrictions in this
+License, Licensor may terminate this License immediately upon written notice
+to you. Upon any such termination, you must cease using the Licensed Work and
+destroy all copies of the Licensed Work in your possession or control.
+
+Entire Agreement. This License, together with the restrictions and conditions
+of this License, constitutes the entire license agreement between Licensor and
+you and supersedes all prior or contemporaneous agreements, representations,
+understandings and communications, whether written or oral, between Licensor
+and you relating to the subject matter of this License. There are no covenants,
+conditions or other terms in this License which are in derogation of or in
+addition to the terms of any other agreement between Licensor and you.
+
+Governing Law. This License shall be governed by and construed in accordance
+with the laws of the State of California, United States of America, excluding
+its conflicts of law provisions. Any action or proceeding arising out of this
+License shall be brought exclusively in the state and federal courts located
+in California, and the parties irrevocably consent to the personal jurisdiction
+and venue of such courts.
+
+For more information about the Business Source License, visit
+https://mariadb.com/bsl11/
