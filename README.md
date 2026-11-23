@@ -1,5 +1,16 @@
 # Sens Prism
 
+> [!WARNING]
+> **This repository is an old snapshot (February 2026) of Sens Prism v0.4. It does not describe Sens as it is today.**
+>
+> Several statements in this repository are not true of Sens today:
+> - Sens does not currently encrypt stored data. There is no encrypted enclave and no zero-knowledge architecture.
+> - The sanitizer does not remove names, company names, addresses, amounts or dates.
+> - USIDs have not been shown to be model-independent.
+> - The packages and API named here (`pip install sens-prism`, `@sens/prism`, `https://api.sens.ai/v1`) are not available, and the pricing shown is not offered.
+>
+> For current information, see [sens-thread.io](https://sens-thread.io). Contact: info@sens-thread.io
+
 [![License: BSL 1.1](https://img.shields.io/badge/License-BSL%201.1-blue.svg)](LICENSE)
 [![Version](https://img.shields.io/badge/version-0.4.0-brightgreen.svg)](https://github.com/ecri0/sens-prism/releases/tag/v0.4.0)
 [![Python SDK](https://img.shields.io/badge/python-3.9%2B-blue.svg)](sdk/python)
