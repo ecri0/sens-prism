@@ -1,5 +1,12 @@
 # Security Policy
 
+> [!WARNING]
+> **This document is part of an old snapshot (February 2026) of Sens Prism v0.4. It does not describe Sens as it is today.**
+>
+> The security measures described below — encryption at rest, customer-owned keys, a zero-knowledge architecture, and encrypted, tamper-proof logs — are not implemented in Sens today. The addresses `security@sens.ai` and `sens.ai/security` are not in use.
+>
+> To report a security issue, write to info@sens-thread.io. For current information, see [sens-thread.io](https://sens-thread.io).
+
 Sens Prism takes security seriously. This document outlines our security practices and how to report vulnerabilities.
 
 ## Reporting Security Vulnerabilities
